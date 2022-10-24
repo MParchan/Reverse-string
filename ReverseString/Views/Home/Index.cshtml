@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="Index">
+        <p>
+            <h5>Type a word: </h5>
+            <input type="text" name="enteredString" />
+            <input type="submit" value="Reverse" />
+        </p>
+    </form>
+    <p>
+        <h5>@ViewData["Heading"]</h5>
+        @ViewData["ReverseWord"]
+    </p>
+</div>
